@@ -1,0 +1,73 @@
+.home-page {
+  .sticky-section {
+    position: sticky;
+    top: 0;
+    background-color: #f3f4fd;
+    padding-bottom: 10px;
+    .search-repo {
+      position: relative;
+      width: 70%;
+      svg {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        &:first-child {
+          left: 8px;
+        }
+        &:last-child {
+          right: 8px;
+          cursor: pointer;
+        }
+      }
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// repository Information
+
+.repo-box {
+  background: #0079b6 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  padding: 28px 20px;
+  margin: 20px;
+  color: white;
+  width: 300px;
+
+  .repo-name {
+    font: normal normal 600 18px/21px "Montserrat";
+  }
+
+  .repo-owner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    span {
+      &:first-child {
+        font: normal normal 600 13px/16px "Montserrat";
+      }
+      &:last-child {
+        font: normal normal 600 11px/14px "Montserrat";
+      }
+    }
+  }
+}
+
+// sort-section
+
+.sort-section {
+  margin: auto;
+  gap: 20px;
+  width: 70%;
+  margin-top: 20px;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    justify-content: center !important;
+  }
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+  }
+}
