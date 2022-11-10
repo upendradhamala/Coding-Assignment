@@ -16,5 +16,5 @@ The next step is to run the project. For that do-
 
 After few seconds you can see the results live on your browser
 
-###Technologies used
+### `Technologies Used`
 ReactJS
